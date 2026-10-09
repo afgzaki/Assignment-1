@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag: makes mobile browsers use the real device width (Week 3 responsive lecture) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me | Zaki Afghanzada</title>
+    <!-- Stylesheet for full-size monitor (laptop/desktop) -->
+    <link href="css/full.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width:960px)">
+    <!-- Stylesheet for tablet -->
+    <link href="css/tablet.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width:481px) and (max-width:959px)">
+    <!-- Stylesheet for smart phone -->
+    <link href="css/smartphone.css" rel="stylesheet" type="text/css"
+    media="only screen and (max-width:480px)">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header: site name and main navigation, repeated on every page -->
+        <header id="banner">
+            <h1>Zaki Afghanzada</h1>
+            <p>Personal Portfolio</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main: the unique content of this page -->
+        <main>
+            <article>
+                <h2>Contact Me</h2>
+                <p>Send me your questions, comments and project related queries!</p>
+                <!-- Contact form: the browser checks the required, email and pattern rules before it sends -->
+                <form action="mailto:zaki.afghanzada@ontariotechu.net" method="post" enctype="text/plain">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" size="32"
+                        placeholder="Enter your full name" minlength="2" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" size="32"
+                        placeholder="Enter your email address" required>
+                    </p>
+                    <p>
+                        <label for="phone">Cell No.:</label>
+                        <!-- pattern allows exactly 10 digits; title is the message shown if it does not match -->
+                        <input type="tel" id="phone" name="phone" size="32"
+                        placeholder="10 digits, numbers only" pattern="[0-9]{10}"
+                        title="Enter a 10 digit phone number using numbers only" required>
+                    </p>
+                    <p>
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments" cols="60" rows="6"
+                        placeholder="Question, comment or query" required></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </p>
+                </form>
+            </article>
+        </main>
+
+        <!-- The clear class style clears (removes) the float before the footer -->
+        <div class="clear"></div>
+
+        <!-- Footer: contact email and copyright -->
+        <footer>
+            <address>
+                <p>Contact me at <a href="mailto:zaki.afghanzada@ontariotechu.net">zaki.afghanzada@ontariotechu.net</a></p>
+            </address>
+            <p>&copy; 2026 Zaki Afghanzada. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
