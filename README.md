@@ -1,6 +1,6 @@
 # INFR3120 Assignment 1 - Personal Portfolio Site
 
-**Student:** [Your Name]
+**Student:** [Zaki Afghanzada]
 **Course:** INFR3120 - Web and Scripting Programming (Fall 2026)
 **Live site:** [GitHub Pages link goes here]
 **Repository:** [GitHub repo link goes here]
