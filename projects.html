@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag: makes mobile browsers use the real device width (Week 3 responsive lecture) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Zaki Afghanzada</title>
+    <!-- Stylesheet for full-size monitor (laptop/desktop) -->
+    <link href="css/full.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width:960px)">
+    <!-- Stylesheet for tablet -->
+    <link href="css/tablet.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width:481px) and (max-width:959px)">
+    <!-- Stylesheet for smart phone -->
+    <link href="css/smartphone.css" rel="stylesheet" type="text/css"
+    media="only screen and (max-width:480px)">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header: site name and main navigation, repeated on every page -->
+        <header id="banner">
+            <h1>Zaki Afghanzada</h1>
+            <p>Personal Portfolio</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main: the unique content of this page -->
+        <main>
+            <section>
+                <h2>My Projects</h2>
+                <p>Here are some of the projects and assignments I have worked on in my previous courses.</p>
+                <article class="project">
+                    <h3>Student Grading System (Python)</h3>
+                    <p>I worked with a team to build a Python application for managing student grades. I contributed the project diagrams and the README documentation that explains the system.</p>
+                </article>
+                <article class="project">
+                    <h3>VLAN and Inter-VLAN Routing Lab (Networking)</h3>
+                    <p>I configured VLANs and trunk links in Cisco Packet Tracer. I used router-on-a-stick routing so devices in different VLANs could communicate.</p>
+                </article>
+                <article class="project">
+                    <h3>OSPF Routing Lab (Networking)</h3>
+                    <p>I configured single-area OSPF so routers could automatically share routes. I verified connectivity using routing tables and ping tests.</p>
+                </article>
+                <article class="project">
+                    <h3>Ubuntu Virtual Machine Setup (Linux)</h3>
+                    <p>I installed Ubuntu in VirtualBox and set up a virtual machine for practicing Linux commands and exploring the operating system.</p>
+                </article>
+            </section>
+        </main>
+
+        <!-- The clear class style clears (removes) the float before the footer -->
+        <div class="clear"></div>
+
+        <!-- Footer: contact email and copyright -->
+        <footer>
+            <address>
+                <p>Contact me at <a href="mailto:zaki.afghanzada@ontariotechu.net">zaki.afghanzada@ontariotechu.net</a></p>
+            </address>
+            <p>&copy; 2026 Zaki Afghanzada. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

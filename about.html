@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport meta tag: makes mobile browsers use the real device width (Week 3 responsive lecture) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Zaki Afghanzada</title>
+    <!-- Stylesheet for full-size monitor (laptop/desktop) -->
+    <link href="css/full.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width:960px)">
+    <!-- Stylesheet for tablet -->
+    <link href="css/tablet.css" rel="stylesheet" type="text/css"
+    media="only screen and (min-width:481px) and (max-width:959px)">
+    <!-- Stylesheet for smart phone -->
+    <link href="css/smartphone.css" rel="stylesheet" type="text/css"
+    media="only screen and (max-width:480px)">
+</head>
+<body>
+    <div id="wrapper">
+        <!-- Header: site name and main navigation, repeated on every page -->
+        <header id="banner">
+            <h1>Zaki Afghanzada</h1>
+            <p>Personal Portfolio</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" aria-current="page">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main: the unique content of this page -->
+        <main>
+            <article>
+                <h2>About Me</h2>
+                <!-- Figure and figcaption: my photo with a caption -->
+                <figure>
+                    <img src="images/profile.jpg" alt="Photo of Zaki Afghanzada">
+                    <figcaption>Zaki Afghanzada</figcaption>
+                </figure>
+                <section>
+                    <h3>Introduction</h3>
+                    <p>Hi, I'm Zaki Afghanzada. I am a student learning how to build websites with HTML5 and CSS3.</p>
+                    <p>This portfolio shows what I have worked on so far. I enjoy learning new skills and I am always
+                        looking for the next project to build.</p>
+                </section>
+                <div class="clear"></div>
+                <section>
+                    <h3>Watch my introduction</h3>
+                    <!-- HTML5 video: controls shows the play bar, poster is the picture shown before playing -->
+                    <video controls poster="images/poster.jpg" preload="metadata">
+                        <source src="video/intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </section>
+            </article>
+        </main>
+
+        <!-- The clear class style clears (removes) the float before the footer -->
+        <div class="clear"></div>
+
+        <!-- Footer: contact email and copyright -->
+        <footer>
+            <address>
+                <p>Contact me at <a href="mailto:zaki.afghanzada@ontariotechu.net">zaki.afghanzada@ontariotechu.net</a></p>
+            </address>
+            <p>&copy; 2026 Zaki Afghanzada. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
