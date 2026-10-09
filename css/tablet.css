@@ -6,9 +6,6 @@
    Colour scheme (Adobe Color, complementary rule):
    Navy #14213D | Blue #2F4B7C | Amber #FCA311 | Gold #FFD27A | Light gray #E5E5E5 | White #FFFFFF */
 
-   Colour scheme (Adobe Color, complementary rule):
-   Navy #14213D | Blue #2F4B7C | Amber #FCA311 | Gold #FFD27A | Light gray #E5E5E5 | White #FFFFFF */
-
 /* Include padding and border inside every element's width so percentage widths add up correctly */
 * {
     box-sizing: border-box;
