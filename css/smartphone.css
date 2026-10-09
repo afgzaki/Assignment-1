@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* smartphone.css - styles for smartphone screens (480px and narrower).
+   Same layout technique as the Week 3 lectures: fluid design (percentage widths) and floats only.
+   Each viewport has its own self-contained stylesheet, as in the lecture's responsive template.
+
+   Colour scheme (Adobe Color, complementary rule):
+   Navy #14213D | Blue #2F4B7C | Amber #FCA311 | Gold #FFD27A | Light gray #E5E5E5 | White #FFFFFF */
+
+   Colour scheme (Adobe Color, complementary rule):
+   Navy #14213D | Blue #2F4B7C | Amber #FCA311 | Gold #FFD27A | Light gray #E5E5E5 | White #FFFFFF */
+
+/* Include padding and border inside every element's width so percentage widths add up correctly */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: #E5E5E5;
+    color: #14213D;
+}
+
+/* Wrapper: fluid width (percentage) so it grows and shrinks with the browser window */
+#wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header and footer share the same navy background and white text */
+header,
+footer {
+    background-color: #14213D;
+    color: #FFFFFF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* GRADIENT 1 - plain linear gradient (top to bottom): navy fades into blue in the header */
+#banner {
+    background: linear-gradient(to bottom, #14213D 0%, #2F4B7C 100%);
+}
+
+#banner h1 {
+    margin: 10px;
+    padding-top: 10px;
+    font-size: x-large;
+    color: #FFFFFF;
+}
+
+#banner p {
+    margin: 10px;
+    color: #FFFFFF;
+}
+
+/* Navigation: a horizontal row of buttons (list items sit side by side with inline-block) */
+nav ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: medium;
+    background-color: #FCA311;
+    color: #14213D;
+    padding: 6px 12px;
+    margin: 4px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 3px gray;
+    transition: background-color 0.5s;
+}
+
+nav a:hover {
+    background-color: #FFD27A;
+    box-shadow: 5px 5px 3px black;
+}
+
+/* The link for the page you are currently on is white so visitors can tell where they are */
+nav a[aria-current="page"] {
+    background-color: #FFFFFF;
+}
+
+/* Main content area */
+main {
+    background-color: #FFFFFF;
+    color: #14213D;
+    padding: 10px;
+}
+
+h2,
+h3,
+p,
+li {
+    margin: 10px;
+}
+
+main a {
+    color: #2F4B7C;
+}
+
+main a:hover {
+    color: #14213D;
+}
+
+/* GRADIENT 2 - angled linear gradient (135 degrees): amber fades into gold on the Home page box */
+.hero {
+    background: linear-gradient(135deg, #FCA311 0%, #FFD27A 100%);
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.hero a {
+    color: #14213D;
+}
+
+/* About Me page: on a small screen the photo sits centred above the text (no float) */
+figure {
+    width: 70%;
+    margin: 15px auto;
+    padding: 5px;
+    background-color: #E5E5E5;
+    border: 1px solid #14213D;
+}
+
+img {
+    width: 100%;
+}
+
+figcaption {
+    background-color: #14213D;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Video: width in percent so it stays fluid; border and shadow style from the Week 3 video lecture */
+video {
+    width: 100%;
+    margin: 15px 0px;
+    background-color: #000000;
+    border: 2px #14213D solid;
+    box-shadow: 10px 10px 5px gray;
+}
+
+/* Projects page: one box per row on a small screen */
+.project {
+    display: inline-block;
+    vertical-align: top;
+    width: 96%;
+    margin: 2%;
+    background-color: #E5E5E5;
+    border-left: 8px solid #FCA311;
+    border-radius: 15px;
+    transition: transform 0.5s;
+}
+
+/* Week 4 transform + transition: the box grows slightly when the mouse is over it */
+.project:hover {
+    transform: scale(1.03);
+}
+
+.project h3 {
+    color: #2F4B7C;
+}
+
+/* Contact page form */
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 2px solid #14213D;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 1rem;
+    padding: 10px 25px;
+    margin-right: 10px;
+    background-color: #FCA311;
+    color: #14213D;
+    border: 2px solid #14213D;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #14213D;
+    color: #FFFFFF;
+}
+
+/* Footer: email link and copyright */
+footer a {
+    color: #FCA311;
+}
+
+footer a:hover {
+    color: #FFD27A;
+}
+
+footer p {
+    color: #FFFFFF;
+}
+
+address {
+    font-style: normal;
+}
+
+/* The clear class style clears (removes) the float */
+.clear {
+    clear: both;
+}
