@@ -59,7 +59,7 @@ I used these breakpoints because they are the ones from the Week 3 lecture's res
 **Notes**
 - The link checker cannot test `mailto:` links by design, so it reports that one as disabled. The email link works in a browser.
 - WAVE shows one alert on the About page. It is the standard reminder that appears whenever a page contains a `<video>` element, asking the developer to check manually that the video is accessible. The video has playback controls and a poster image. I did not add captions or a transcript because the assignment did not require them and captions need extra markup outside the lecture material.
-- The contact form uses a `mailto:` action, so Chrome may show a "not secure" autofill notice on the form fields. The assignment does not require a server, and the form validation (required fields, email format, 10-digit phone number) works.
+- The contact form uses a `mailto:` action, so Chrome may show a "not secure" autofill notice on the form fields. 
 
 ## Code sources
 ## Code sources and AI disclosure
